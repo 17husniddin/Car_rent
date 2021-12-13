@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'drf_yasg',
-    'homepage',
-    'category',
     'contact',
     'knox',
     'korzina',
