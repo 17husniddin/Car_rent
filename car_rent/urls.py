@@ -43,6 +43,7 @@ from knox import views as knox_views
 from account.views import LoginAPI
 from django.urls import path
 from car_picture.views import *
+from car_date.views import *
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 router = DefaultRouter()
@@ -52,7 +53,7 @@ router.register('category', CategoryViewSet)
 router.register('cardItem', CardItemViewSet)
 router.register('card', CardViewSet)
 router.register('car_picture', Car_pictureViewSet)
-
+router.register('car_date', Car_dateViewSet)
 schema_view = get_schema_view(
    openapi.Info(
       title="Snippets API",
