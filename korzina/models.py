@@ -10,7 +10,7 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
-    description = models.TextField()
+    description = models.TextField(default=True)
     image = models.ImageField(default=True)
     category = models.ForeignKey(Category, related_name='products', on_delete = models.PROTECT )
 
