@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Car_date(models.Model):
-    date =  models.DateField(auto_now_add=True)
+    date =  models.DateField()
     time_from = models.TimeField()
     time_to = models.TimeField()
     product = models.CharField(max_length=200)
